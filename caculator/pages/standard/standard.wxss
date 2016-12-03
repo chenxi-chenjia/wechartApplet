@@ -1,0 +1,218 @@
+.header{
+	width: 100%;
+	height: 80rpx;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	background: #0084ff;
+	box-sizing:border-box;
+	border-bottom:1rpx solid #fff;
+}
+/*屏幕*/
+.screen{
+	width: 100%;
+	height: 300rpx;
+	background: #0084ff;
+	color:#fff;
+	position: relative;
+}
+.screen .mg{
+	width: 100%;
+	height: 150rpx;
+}
+.screen .mg .font{
+	width: 100%;
+	color:#fff;
+	font:14px/30px "微软雅黑";
+	box-sizing:border-box;
+	padding-left: 30rpx;
+	padding-top: 50rpx;
+}
+.screen .pl{
+	position: absolute;
+	width: 50%;
+	height: 150rpx;
+	left: 50%;
+	top:0;
+}
+.screen .pl .font{
+	width: 100%;
+	color:#fff;
+	font:14px/30px "微软雅黑";
+	box-sizing:border-box;
+	padding-left: 30rpx;
+	padding-top: 50rpx;
+}
+.screen .pl .num{
+	font-size: 24px;
+	font-height:40px;
+	box-sizing:border-box;
+	padding-left: 30rpx;
+}
+.screen .mg .num{
+	font-size: 24px;
+	font-height:40px;
+	box-sizing:border-box;
+	padding-left: 30rpx;
+}
+.screen .bottom{
+	position: absolute;
+	bottom:0;
+	height: 100rpx;
+	width: 100%;
+}
+.screen .bottom:after{
+	width: 1rpx;
+	height: 80%;
+	opacity: .7;
+	background: #fff;
+	position: absolute;
+	content: "";
+	left: 0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+.screen .bottom .box{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding-left: 30rpx;
+	box-sizing:border-box;
+}
+.screen .bottom .box .font{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.screen .bottom .box .num{
+	font-size: 20px;
+}	
+/*操作*/
+.operation{
+	width: 100%;
+	height: auto;
+	box-sizing:border-box;
+	padding: 0 30rpx;
+	margin-top: 50rpx;
+}
+.operation .box{
+	width: 100%;
+	position: relative;
+	height: 80rpx;
+	box-sizing:border-box;
+	border-bottom:1rpx solid #eee;
+}
+.operation .font{
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+}
+.operation .icon{
+	width: 40rpx;
+	height: 100%;
+	color: #ccc;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.operation .change{
+	line-height: 40px;
+	position: absolute;
+	right: 40rpx;
+	top:0;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #999;
+}
+.operation .input{
+	position: absolute;
+	top:0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #999;
+	width: 180rpx;
+	text-align: right;
+}
+.last{
+	width: 100%;
+	padding-left: 30rpx;
+	font-weight: 400;
+	font-size: 14px;
+	color:#999;
+	box-sizing:border-box;
+	line-height: 30px;
+}
+.hide{
+	height: 480rpx;
+	box-sizing:border-box;
+	border-top: 1rpx solid #ececec;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	transform:translateY(240px);
+}
+.hide .top{
+	width: 100%;
+	height: 80rpx;
+	background: #eee;
+	color:#0084ff;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	position: relative;
+}
+.hide .top .left {
+	position: absolute;
+	top: 0;
+	left: 30rpx;
+	height: 100%;
+}
+.hide .top .right {
+	position: absolute;
+	top: 0;
+	right: 30rpx;
+	height: 100%;
+}
+.hide .box{
+	width: 100%;
+	box-sizing:border-box;
+	height: 320rpx;
+	overflow: auto;
+}
+.hide .box .list{
+	width: 100%;
+	height: 60rpx;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	font-family: "微软雅黑";
+	text-align: center;
+	box-sizing:border-box;
+}
+.mark{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .3;
+}

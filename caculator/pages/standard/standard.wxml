@@ -1,0 +1,124 @@
+<view class="header">
+	等额本金
+</view>
+<view class="screen">
+	<view class="mg">
+		<view class="font">
+			每月月供参考(元)
+		</view>
+		<view class="num">
+			{{money}}
+		</view>
+	</view>
+	<view class="pl">
+		<view class="font">
+			每月递减(元)
+		</view>
+		<view class="num">
+			{{poor}}
+		</view>
+	</view>
+	<view class="bottom">
+		<view class="box">
+			<view class="font">
+				支付利息(元)
+			</view>
+			<view class="num">
+				{{insterest}}
+			</view>
+		</view>
+		<view class="line"></view>
+		<view class="box">
+			<view class="font">
+				还款总额(元)
+			</view>
+			<view class="num">
+				{{all}}
+			</view>
+		</view>
+	</view>
+</view>
+<view class="operation">
+	<view class="box" bindtap="type">
+		<view class="font" >
+			贷款类型
+		</view>
+		<view class="change">
+			{{loan}}
+		</view>
+		<view class="icon">
+			>
+		</view>
+	</view>
+	<!-- 商业贷款 -->
+	<view class="box" wx:if="{{business}}"> 
+		<view class="font">
+			商贷金额(万)
+		</view>
+		<input type="number" placeholder="请输入金额" bindinput="bmont" class="input" placeholder-style="font-size: 16px;font-family: '微软雅黑';color: #999;"/>
+	</view>
+	<!-- 公积金贷款 -->
+	<view class="box" wx:if="{{accumulation}}">
+		<view class="font">
+			公积金贷款金额(万)
+		</view>
+		<input type="number"  placeholder="请输入金额" bindinput="amont" class="input" placeholder-style="font-size: 16px;font-family: '微软雅黑';color: #999;"/>
+	</view>
+	<view class="box" bindtap="limit" bindtap="limit">
+		<view class="font">
+			期限(年)
+		</view>
+		<view class="change">
+			{{limit}}
+		</view>
+		<view class="icon">
+			>
+		</view>
+	</view>
+	<view class="box" bindtap="business" bindtap="anmountRate" wx:if="{{business}}">
+		<view class="font">
+			商贷利率(%)
+		</view>
+		<view class="change">
+			{{businessRates}}
+		</view>
+		<view class="icon">
+			>
+		</view>
+	</view>
+	<view class="box" bindtap="providentRates" wx:if="{{accumulation}}">
+		<view class="font">
+			公积金贷利率(%)
+		</view>
+		<view class="change">
+			{{providentRates}}
+		</view>
+		<view class="icon">
+			>
+		</view>
+	</view>
+</view>
+<view class="last">
+	以上为央行2016年最新公布的贷款基准利率
+</view>
+<view class="mark" wx:if="{{markflag}}" bindtap="hide"></view>
+<view class="bnsr hide" wx:if="{{business}}" animation="{{bnsta}}">
+	<view class="top">
+	</view>
+	<view class="box" wx:if="{{limit==='5'}}">
+		<view class="list" bindtap="bnstap" wx:for="{{brates}}" id="{{item.id}}">{{item.name}}</view>
+	</view>
+	<view class="box" wx:if="{{limit!=='5'}}">
+		<view class="list" bindtap="bnstap" wx:for="{{brate}}" id="{{item.id}}">{{item.name}}</view>
+	</view>
+</view>
+<view class="antr hide"  animation="{{antra}}">
+	<view class="top">
+	</view>
+	<view class="box" wx:if="{{limit==='5'}}">
+		<view class="list" bindtap="antap" wx:for="{{arates}}" id="{{item.id}}">{{item.name}}</view>
+	</view>
+	<view class="box" wx:if="{{limit!=='5'}}">
+		<view class="list" bindtap="antap" wx:for="{{arate}}" id="{{item.id}}">{{item.name}}</view>
+	</view>
+</view>

@@ -1,0 +1,19 @@
+<block class="block">
+	<view class="img" style="background-image:url({{img}})">
+		
+	</view>
+	<view class="title">
+		{{title}}
+	</view>
+	<view class="content">
+		{{content}}
+	</view>
+</block>
+<view class="bottom">
+	<view class="zan">赞：{{znum}}</view>
+	<view class="pl">
+		<navigator url="../comment/comment?id={{id}}">
+			查看评论
+		</navigator>
+	</view>
+</view>

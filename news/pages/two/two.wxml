@@ -1,0 +1,22 @@
+<view class="block">
+	<view class="img" style="background-image:url({{backimg}})">
+		
+	</view>
+</view>
+<view class="oucter">
+	<view class="dp">
+		{{description}}
+	</view>
+	<view class="zz">
+		<view class="ator">作者：{{ator}}</view>
+		<view class="img" style="background-image:url({{img}})"></view>
+	</view>
+</view>
+<block wx:for="{{list}}" class="news">
+	<view class="new" bindtap="gotap" data-title="{{item.title}}" data-img="{{item.img}}" data-id="{{item.id}}">
+		<navigator url="../show/show?id={{item.id}}">
+			<view class="title">{{item.title}}</view>
+			<view class="img" style="background-image:url({{item.img}})"></view>
+		</navigator>
+	</view>
+</block>

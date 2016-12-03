@@ -1,0 +1,24 @@
+<view class="long box">
+	<view class="comment" wx:for="{{long}}">
+		<view class="content">
+			{{item.content}}
+		</view>
+		<view class="bottom">
+			<image class="head" mode="aspectFill" src="{{item.avatar}}"></image>
+			{{item.author}}
+		</view>
+		
+	</view>
+</view>
+<view class="shot box">
+	<view class="comment" wx:for="{{shot}}">
+		<view class="content">
+			{{item.content}}
+		</view>
+		<view class="bottom">
+			<image class="head" mode="aspectFill" src="{{item.avatar}}"></image>
+			{{item.author}}
+		</view>
+		
+	</view>
+</view>

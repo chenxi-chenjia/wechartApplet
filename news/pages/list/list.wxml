@@ -1,0 +1,25 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" style="height:400rpx">
+	<block wx:for="{{imgl}}">
+		<swiper-item style="background-image:url({{item}});background-postion:center;background-size:cover;background-repeat:no-repeat;height:400rpx"></swiper-item>
+	</block>
+</swiper>
+<block wx:for="{{news}}" class="news">
+	<view class="new" bindtap="gotap" data-title="{{item.title}}" data-img="{{item.img}}" data-id="{{item.id}}">
+		<view class="title">{{item.title}}</view>
+		<view class="img" style="background-image:url({{item.img}})"></view>
+	</view>
+</block>
+<block>
+	<view class="navs" animation="{{mam}}">
+		
+		<view class="nav" wx:for="{{menu}}">
+			<navigator url="../two/two?id={{item.id}}">
+				{{item.name}}
+			</navigator>	
+		</view>
+			<view class="mark" bindtap="menuhide"></view>
+	</view>
+</block>
+<view class="menu" bindtap="menushow">
+	栏目
+</view>

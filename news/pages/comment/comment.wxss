@@ -1,0 +1,29 @@
+.box{
+	width: 100%;
+	margin-bottom:50rpx;
+}
+.comment{
+	width: 100%;
+	padding: 30rpx;
+	text-indent: 2rem;
+	font:18px/30px "Array";
+	margin-bottom: 50rpx;
+	box-sizing: border-box;
+}
+.bottom{
+	width: 100%;
+	position: relative;
+	right:0;
+	bottom:0;
+	padding-right: 150rpx;
+	line-height: 50rpx;	
+}
+.head{
+	position: absolute;
+	width: 70rpx;
+	height: 70rpx;
+	border-radius: 50%;
+	right: 30rpx;
+	bottom: -10rpx;
+	background:blue;
+}

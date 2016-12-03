@@ -1,0 +1,26 @@
+{
+    "pages": [
+      "pages/principal/principal",
+      "pages/standard/standard"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#000000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "房贷计算器",
+      "backgroundColor": "#29a6dc",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/principal/principal",
+        "text": "等额本息"
+      },{
+        "pagePath": "pages/standard/standard",
+        "text": "等额本金"
+      }],
+      "color":"#cccccc",
+      "selectedColor":"#ffffff",
+      "backgroundColor":"#000000"
+    }
+}
