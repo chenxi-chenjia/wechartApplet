@@ -4,19 +4,19 @@
 			{{item.content}}
 		</view>
 		<view class="bottom">
-			<image class="head" mode="aspectFill" src="{{item.avatar}}"></image>
+			<image class="head" mode="aspectFit" src="{{item.avatar}}"></image>
 			{{item.author}}
 		</view>
 		
 	</view>
 </view>
 <view class="shot box">
-	<view class="comment" wx:for="{{shot}}">
+	<view class="comment" wx:for="{{short}}">
 		<view class="content">
 			{{item.content}}
 		</view>
 		<view class="bottom">
-			<image class="head" mode="aspectFill" src="{{item.avatar}}"></image>
+			<image class="head" mode="aspectFit" src="{{item.avatar}}"></image>
 			{{item.author}}
 		</view>
 		

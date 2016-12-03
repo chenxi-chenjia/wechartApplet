@@ -66,6 +66,7 @@ Page({
                         var obj={};
                         obj.title=res.data.stories[i].title;
                         obj.img="//images.weserv.nl/?url="+res.data.stories[i].images[0].slice(7);
+                        obj.id=res.data.stories[i].id;
                         news.push(obj);
                     }
                     self.setData({
